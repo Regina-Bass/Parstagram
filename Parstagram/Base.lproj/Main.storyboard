@@ -101,42 +101,40 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="440"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="This is a caption" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pb1-Xk-9lC">
-                                                    <rect key="frame" x="80" y="381" width="124" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Regina" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sdd-R4-E1o">
+                                                    <rect key="frame" x="28" y="390" width="55" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="124" id="Xyh-SW-ZiM"/>
+                                                        <constraint firstAttribute="height" constant="21" id="WJZ-eJ-6S4"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HO8-rl-IAr">
-                                                    <rect key="frame" x="21" y="12" width="373.33333333333331" height="361"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="361" id="Td9-wa-oDD"/>
-                                                        <constraint firstAttribute="width" constant="373" id="tIg-mX-CrC"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Regina" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sdd-R4-E1o">
-                                                    <rect key="frame" x="21" y="380" width="55" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="300" verticalCompressionResistancePriority="300" misplaced="YES" text="This is a caption" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pb1-Xk-9lC">
+                                                    <rect key="frame" x="145" y="391" width="249" height="20"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="efG-eh-RMp">
+                                                    <rect key="frame" x="20" y="32" width="375" height="350"/>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="HO8-rl-IAr" firstAttribute="centerX" secondItem="s7L-1s-b7Q" secondAttribute="centerX" id="YKI-3R-oLJ"/>
-                                                <constraint firstItem="pb1-Xk-9lC" firstAttribute="leading" secondItem="Sdd-R4-E1o" secondAttribute="trailing" constant="12" id="aid-MP-ovT"/>
-                                                <constraint firstItem="HO8-rl-IAr" firstAttribute="centerY" secondItem="s7L-1s-b7Q" secondAttribute="centerY" id="aqC-zI-ze6"/>
-                                                <constraint firstItem="Sdd-R4-E1o" firstAttribute="centerY" secondItem="pb1-Xk-9lC" secondAttribute="centerY" id="cf3-pB-O3x"/>
-                                                <constraint firstItem="pb1-Xk-9lC" firstAttribute="top" secondItem="HO8-rl-IAr" secondAttribute="bottom" constant="8" id="dsI-zd-9GW"/>
-                                                <constraint firstItem="Sdd-R4-E1o" firstAttribute="leading" secondItem="s7L-1s-b7Q" secondAttribute="leadingMargin" constant="10" id="k0V-zJ-P8U"/>
-                                                <constraint firstItem="Sdd-R4-E1o" firstAttribute="top" secondItem="HO8-rl-IAr" secondAttribute="bottom" constant="7" id="uU1-sW-swC"/>
+                                                <constraint firstItem="Sdd-R4-E1o" firstAttribute="centerY" secondItem="pb1-Xk-9lC" secondAttribute="centerY" id="5eW-UO-w8S"/>
+                                                <constraint firstItem="Sdd-R4-E1o" firstAttribute="top" secondItem="efG-eh-RMp" secondAttribute="bottom" constant="28" id="BIp-7I-gyU"/>
+                                                <constraint firstItem="pb1-Xk-9lC" firstAttribute="leading" secondItem="Sdd-R4-E1o" secondAttribute="trailing" constant="58" id="BZS-aT-W8p"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="pb1-Xk-9lC" secondAttribute="bottom" constant="18" id="DAG-4L-2cy"/>
+                                                <constraint firstItem="Sdd-R4-E1o" firstAttribute="leading" secondItem="s7L-1s-b7Q" secondAttribute="leadingMargin" constant="12" id="Kn9-80-0X1"/>
+                                                <constraint firstItem="efG-eh-RMp" firstAttribute="leading" secondItem="s7L-1s-b7Q" secondAttribute="leadingMargin" constant="12" id="UZI-fg-A9t"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Sdd-R4-E1o" secondAttribute="bottom" constant="18" id="ZiF-7g-XT1"/>
+                                                <constraint firstItem="efG-eh-RMp" firstAttribute="top" secondItem="s7L-1s-b7Q" secondAttribute="topMargin" constant="1" id="aZe-fg-ebd"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="pb1-Xk-9lC" secondAttribute="bottom" constant="18" id="w50-f4-bbu"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="captionLabel" destination="pb1-Xk-9lC" id="bY6-qJ-4uL"/>
-                                            <outlet property="photoView" destination="HO8-rl-IAr" id="ECb-Vr-csQ"/>
+                                            <outlet property="photoView" destination="efG-eh-RMp" id="TWE-Se-yAh"/>
                                             <outlet property="usernameLabel" destination="Sdd-R4-E1o" id="I1l-ac-WT6"/>
                                         </connections>
                                     </tableViewCell>
@@ -147,7 +145,6 @@
                         <viewLayoutGuide key="safeArea" id="Knk-w3-BbB"/>
                     </view>
                     <navigationItem key="navigationItem" id="Bjz-RW-DTy">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="feed_tab" id="sad-JI-0YQ"/>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="insta_camera_btn" id="GqU-Sy-oRT">
                             <connections>
                                 <segue destination="wN4-J2-Axu" kind="presentation" id="7MN-Wa-sxP"/>
@@ -215,7 +212,7 @@
                         <viewLayoutGuide key="safeArea" id="Rou-Sl-2We"/>
                     </view>
                     <connections>
-                        <outlet property="CaptionField" destination="PXx-RM-0dt" id="QA4-2c-rrT"/>
+                        <outlet property="captionField" destination="PXx-RM-0dt" id="QA4-2c-rrT"/>
                         <outlet property="imageView" destination="3cZ-Rb-dmA" id="ang-2w-i2g"/>
                     </connections>
                 </viewController>
@@ -248,7 +245,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="feed_tab" width="25" height="25"/>
         <image name="image_placeholder" width="375" height="375"/>
         <image name="insta_camera_btn" width="25" height="25"/>
         <image name="instagram_logo" width="255" height="108"/>

@@ -7,13 +7,14 @@
 //
 
 import UIKit
+import Alamofire
 import AlamofireImage
 import Parse
 
 class CameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var CaptionField: UITextField!
+    @IBOutlet weak var captionField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +25,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     @IBAction func onSubmitButton(_ sender: Any) {
         let post = PFObject(className: "Posts")
         
-        post["caption"] = CaptionField.text!
+        post["caption"] = captionField.text!
         post["author"] = PFUser.current()!
         //whoever's logged in rn
         
