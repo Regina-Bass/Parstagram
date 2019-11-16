@@ -91,11 +91,33 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Knk-w3-BbB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Bjz-RW-DTy"/>
+                    <navigationItem key="navigationItem" id="Bjz-RW-DTy">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="feed_tab" id="sad-JI-0YQ"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="insta_camera_btn" id="GqU-Sy-oRT">
+                            <connections>
+                                <segue destination="wN4-J2-Axu" kind="presentation" id="7MN-Wa-sxP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jTD-t5-vlP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1669.5652173913045" y="98.641304347826093"/>
+            <point key="canvasLocation" x="1503" y="99"/>
+        </scene>
+        <!--Camera View Controller-->
+        <scene sceneID="yCh-0V-T8A">
+            <objects>
+                <viewController id="wN4-J2-Axu" customClass="CameraViewController" customModule="Parstagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZHk-CT-abF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Rou-Sl-2We"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IZu-Dx-l4V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2291" y="99"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="69T-Gf-xet">
@@ -117,6 +139,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="feed_tab" width="25" height="25"/>
+        <image name="insta_camera_btn" width="25" height="25"/>
         <image name="instagram_logo" width="255" height="108"/>
     </resources>
 </document>
