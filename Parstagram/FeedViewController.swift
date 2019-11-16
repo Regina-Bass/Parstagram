@@ -23,6 +23,8 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         query.includeKey("author")   //go and fetch the actual object
         query.limit = 20
         
+        DataRequest.addAcceptableImageContentTypes(["application/octet-stream"])
+        
         query.findObjectsInBackground { (posts, error) in
             if posts != nil {
                 self.posts = posts!
