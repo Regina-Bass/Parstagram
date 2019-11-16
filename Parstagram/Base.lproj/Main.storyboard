@@ -111,13 +111,55 @@
                     <view key="view" contentMode="scaleToFill" id="ZHk-CT-abF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="3cZ-Rb-dmA">
+                                <rect key="frame" x="20" y="57" width="375" height="327"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="327" id="DZO-oT-Mlu"/>
+                                    <constraint firstAttribute="width" constant="327" id="aWU-6X-csD"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="mq0-zc-B9P" appends="YES" id="CFb-3v-nOd"/>
+                                </connections>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PXx-RM-0dt">
+                                <rect key="frame" x="20" y="392" width="374" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DFD-1l-swV">
+                                <rect key="frame" x="20" y="434" width="374" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="onSubmitButton:" destination="wN4-J2-Axu" eventType="touchUpInside" id="6mS-hF-WdN"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Rou-Sl-2We" firstAttribute="trailing" secondItem="3cZ-Rb-dmA" secondAttribute="trailing" constant="41" id="Aj5-A6-pKI"/>
+                            <constraint firstItem="3cZ-Rb-dmA" firstAttribute="top" secondItem="Rou-Sl-2We" secondAttribute="top" constant="80" id="dHJ-Dw-bxj"/>
+                            <constraint firstItem="3cZ-Rb-dmA" firstAttribute="leading" secondItem="Rou-Sl-2We" secondAttribute="leading" constant="41" id="tEm-Ju-b7G"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Rou-Sl-2We"/>
                     </view>
+                    <connections>
+                        <outlet property="CaptionField" destination="PXx-RM-0dt" id="QA4-2c-rrT"/>
+                        <outlet property="imageView" destination="3cZ-Rb-dmA" id="ang-2w-i2g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IZu-Dx-l4V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="mq0-zc-B9P">
+                    <connections>
+                        <action selector="onCameraButton:" destination="wN4-J2-Axu" id="1jh-mP-C4N"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2291" y="99"/>
+            <point key="canvasLocation" x="2289.8550724637685" y="98.641304347826093"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="69T-Gf-xet">
@@ -140,6 +182,7 @@
     </scenes>
     <resources>
         <image name="feed_tab" width="25" height="25"/>
+        <image name="image_placeholder" width="375" height="375"/>
         <image name="insta_camera_btn" width="25" height="25"/>
         <image name="instagram_logo" width="255" height="108"/>
     </resources>
