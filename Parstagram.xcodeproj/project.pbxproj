@@ -15,6 +15,7 @@
 		5DB84193237F9470003C3D6E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB84192237F9470003C3D6E /* LoginViewController.swift */; };
 		5DB84195237F947B003C3D6E /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB84194237F947B003C3D6E /* FeedViewController.swift */; };
 		5DB84197237FA073003C3D6E /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB84196237FA073003C3D6E /* CameraViewController.swift */; };
+		5DB8419B237FB7DC003C3D6E /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB8419A237FB7DC003C3D6E /* PostCell.swift */; };
 		C5D9EA904AF59A2606AD211B /* Pods_Parstagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2393258D4B8FD6D1B2C2F529 /* Pods_Parstagram.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		5DB84192237F9470003C3D6E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5DB84194237F947B003C3D6E /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		5DB84196237FA073003C3D6E /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		5DB8419A237FB7DC003C3D6E /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				5DB84192237F9470003C3D6E /* LoginViewController.swift */,
 				5DB84194237F947B003C3D6E /* FeedViewController.swift */,
 				5DB84196237FA073003C3D6E /* CameraViewController.swift */,
+				5DB8419A237FB7DC003C3D6E /* PostCell.swift */,
 			);
 			path = Parstagram;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				5DB8417F237F8759003C3D6E /* AppDelegate.swift in Sources */,
 				5DB84195237F947B003C3D6E /* FeedViewController.swift in Sources */,
 				5DB84181237F8759003C3D6E /* SceneDelegate.swift in Sources */,
+				5DB8419B237FB7DC003C3D6E /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
