@@ -22,7 +22,12 @@ The following **bonus** features are implemented:
 ## What I learned
  - auto layouts are hard!
  - How to setup and use Parse (very similar to myPHPadmin)
+   - server
+   - dashboard
  - installing and using npm
+ - Using the Parse user authentication APIs
+ - Creating a Parse object
+ - Querying a Parse class
 
 ### additional: 
 <a href="https://mighty-spire-60614.herokuapp.com">herokuapp link</a> <br />
