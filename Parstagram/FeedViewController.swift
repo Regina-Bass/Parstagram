@@ -14,6 +14,7 @@ import Alamofire
 class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
 
+
     @IBOutlet weak var tableView: UITableView!
     
      var posts = [PFObject]()
@@ -72,5 +73,17 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @IBAction func onLogoutButton(_ sender: Any) {
+        PFUser.logOut()    //clears Parse cache
+        
+        let main = UIStoryboard(name: "Main", bundle: nil)
+        let loginViewController = main.instantiateViewController(withIdentifier: "LoginViewController")
+        //used Scene instead of App
+        let delegate = UIApplication.shared.delegate as! AppDelegate
+        delegate.window?.rootViewController = loginViewController
+        
+    }
+    
 
 }

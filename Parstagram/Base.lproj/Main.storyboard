@@ -10,7 +10,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Parstagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Parstagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -110,26 +110,32 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="300" verticalCompressionResistancePriority="300" misplaced="YES" text="This is a caption" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pb1-Xk-9lC">
-                                                    <rect key="frame" x="145" y="391" width="249" height="20"/>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="300" verticalCompressionResistancePriority="300" text="This is a caption" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pb1-Xk-9lC">
+                                                    <rect key="frame" x="145" y="391" width="249" height="38"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="249" id="euS-yL-jkW"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="efG-eh-RMp">
-                                                    <rect key="frame" x="20" y="32" width="375" height="350"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="efG-eh-RMp">
+                                                    <rect key="frame" x="19" y="21" width="375" height="350"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="375" id="uqb-cw-xAD"/>
+                                                    </constraints>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Sdd-R4-E1o" firstAttribute="centerY" secondItem="pb1-Xk-9lC" secondAttribute="centerY" id="5eW-UO-w8S"/>
-                                                <constraint firstItem="Sdd-R4-E1o" firstAttribute="top" secondItem="efG-eh-RMp" secondAttribute="bottom" constant="28" id="BIp-7I-gyU"/>
-                                                <constraint firstItem="pb1-Xk-9lC" firstAttribute="leading" secondItem="Sdd-R4-E1o" secondAttribute="trailing" constant="58" id="BZS-aT-W8p"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="pb1-Xk-9lC" secondAttribute="bottom" constant="18" id="DAG-4L-2cy"/>
+                                                <constraint firstItem="Sdd-R4-E1o" firstAttribute="centerY" secondItem="pb1-Xk-9lC" secondAttribute="centerY" constant="-9.5" id="5eW-UO-w8S"/>
+                                                <constraint firstItem="Sdd-R4-E1o" firstAttribute="top" secondItem="efG-eh-RMp" secondAttribute="bottom" constant="19" id="BIp-7I-gyU"/>
+                                                <constraint firstItem="pb1-Xk-9lC" firstAttribute="leading" secondItem="Sdd-R4-E1o" secondAttribute="trailing" constant="62" id="BZS-aT-W8p"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="pb1-Xk-9lC" secondAttribute="bottom" id="DAG-4L-2cy"/>
                                                 <constraint firstItem="Sdd-R4-E1o" firstAttribute="leading" secondItem="s7L-1s-b7Q" secondAttribute="leadingMargin" constant="12" id="Kn9-80-0X1"/>
-                                                <constraint firstItem="efG-eh-RMp" firstAttribute="leading" secondItem="s7L-1s-b7Q" secondAttribute="leadingMargin" constant="12" id="UZI-fg-A9t"/>
+                                                <constraint firstItem="efG-eh-RMp" firstAttribute="leading" secondItem="s7L-1s-b7Q" secondAttribute="leadingMargin" constant="-1" id="UZI-fg-A9t"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="Sdd-R4-E1o" secondAttribute="bottom" constant="18" id="ZiF-7g-XT1"/>
-                                                <constraint firstItem="efG-eh-RMp" firstAttribute="top" secondItem="s7L-1s-b7Q" secondAttribute="topMargin" constant="1" id="aZe-fg-ebd"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="pb1-Xk-9lC" secondAttribute="bottom" constant="18" id="w50-f4-bbu"/>
+                                                <constraint firstItem="efG-eh-RMp" firstAttribute="top" secondItem="s7L-1s-b7Q" secondAttribute="topMargin" constant="10" id="aZe-fg-ebd"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="pb1-Xk-9lC" secondAttribute="bottom" id="w50-f4-bbu"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -145,6 +151,11 @@
                         <viewLayoutGuide key="safeArea" id="Knk-w3-BbB"/>
                     </view>
                     <navigationItem key="navigationItem" id="Bjz-RW-DTy">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="fSj-lg-XZV">
+                            <connections>
+                                <action selector="onLogoutButton:" destination="dNB-vl-UlM" id="IuH-Cg-ouX"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="insta_camera_btn" id="GqU-Sy-oRT">
                             <connections>
                                 <segue destination="wN4-J2-Axu" kind="presentation" id="7MN-Wa-sxP"/>
@@ -228,7 +239,7 @@
         <!--Navigation Controller-->
         <scene sceneID="69T-Gf-xet">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FBg-T3-zfT" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="FeedNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="FBg-T3-zfT" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="E8B-cy-SLS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>

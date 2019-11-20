@@ -12,8 +12,8 @@ import Parse
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
+    var window: UIWindow?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
           
         Parse.initialize(
@@ -22,6 +22,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 configuration.server = "https://mighty-spire-60614.herokuapp.com/parse"
             })
         )
+        // checks if logged in
+        if PFUser.current() != nil {
+            let main = UIStoryboard(name: "Main", bundle: nil)
+            let feedNavigationController = main.instantiateViewController(withIdentifier: "FeedNavigationController")
+            // now you have an instance of this navigation controller
+           window?.rootViewController = feedNavigationController
+        }
         
         return true
     }
