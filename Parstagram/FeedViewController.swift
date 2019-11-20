@@ -80,7 +80,9 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         let main = UIStoryboard(name: "Main", bundle: nil)
         let loginViewController = main.instantiateViewController(withIdentifier: "LoginViewController")
         //used Scene instead of App
-        let delegate = UIApplication.shared.delegate as! AppDelegate
+        //let delegate = UIApplication.shared.delegate as! AppDelegate
+        //delegate.window?.rootViewController = loginViewController
+        let delegate = self.view.window?.windowScene?.delegate as!SceneDelegate
         delegate.window?.rootViewController = loginViewController
         
     }
