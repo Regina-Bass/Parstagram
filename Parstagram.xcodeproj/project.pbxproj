@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D0F559123850CA2004A7C17 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0F559023850CA2004A7C17 /* CommentCell.swift */; };
 		5DB8417F237F8759003C3D6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB8417E237F8759003C3D6E /* AppDelegate.swift */; };
 		5DB84181237F8759003C3D6E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB84180237F8759003C3D6E /* SceneDelegate.swift */; };
 		5DB84186237F8759003C3D6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DB84184237F8759003C3D6E /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 		1CBC39EF46F981FAE7D7E787 /* Pods-Parstagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parstagram.release.xcconfig"; path = "Target Support Files/Pods-Parstagram/Pods-Parstagram.release.xcconfig"; sourceTree = "<group>"; };
 		2393258D4B8FD6D1B2C2F529 /* Pods_Parstagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Parstagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C821118D9E84C7B168700AA /* Pods-Parstagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parstagram.debug.xcconfig"; path = "Target Support Files/Pods-Parstagram/Pods-Parstagram.debug.xcconfig"; sourceTree = "<group>"; };
+		5D0F559023850CA2004A7C17 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		5DB8417B237F8759003C3D6E /* Parstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Parstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DB8417E237F8759003C3D6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DB84180237F8759003C3D6E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				5DB84194237F947B003C3D6E /* FeedViewController.swift */,
 				5DB84196237FA073003C3D6E /* CameraViewController.swift */,
 				5DB8419A237FB7DC003C3D6E /* PostCell.swift */,
+				5D0F559023850CA2004A7C17 /* CommentCell.swift */,
 			);
 			path = Parstagram;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				5DB84195237F947B003C3D6E /* FeedViewController.swift in Sources */,
 				5DB84181237F8759003C3D6E /* SceneDelegate.swift in Sources */,
 				5DB8419B237FB7DC003C3D6E /* PostCell.swift in Sources */,
+				5D0F559123850CA2004A7C17 /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
